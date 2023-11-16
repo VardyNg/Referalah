@@ -1,12 +1,22 @@
 import {
+  Briefcase,
+  Building2,
+  CalendarClock,
   CheckCircle2,
   ChevronDown,
+  ClipboardCheck,
+  ClipboardX,
+  Clock,
   Github,
+  History,
   Instagram,
+  Laptop,
   Link,
+  Linkedin,
   Loader,
   LucideProps,
   Mail,
+  MapPin,
   Moon,
   MoreVertical,
   Pencil,
@@ -16,6 +26,7 @@ import {
   Twitter,
   Undo2,
   User,
+  Verified,
   type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -27,6 +38,7 @@ export const Icons = {
   twitter: Twitter,
   user: User,
   link: Link,
+  laptop: Laptop,
   mail: Mail,
   pencil: Pencil,
   loader: Loader,
@@ -36,8 +48,10 @@ export const Icons = {
   checkCircle: CheckCircle2,
   instagram: Instagram,
   github: Github,
+  linkedin: Linkedin,
   rotateRight: RotateCcw,
   slidersHorizontal: SlidersHorizontal,
+  history: History,
   logo: (props: LucideProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
       <path
@@ -66,9 +80,18 @@ export const Icons = {
       stroke-linecap="round"
       stroke-linejoin="round"
       className="lucide lucide-send"
+      {...props}
     >
       <path d="m22 2-7 20-4-9-9-4Z" />
       <path d="M22 2 11 13" />
     </svg>
   ),
+  industry: Briefcase,
+  location: MapPin,
+  company: Building2,
+  yearsOfExperience: CalendarClock,
+  createdAt: Clock,
+  verified: Verified,
+  deactivatePost: ClipboardX,
+  activatePost: ClipboardCheck,
 }

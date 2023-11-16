@@ -1,15 +1,16 @@
-"use client"
-
-import React from "react"
 import { NextPage } from "next"
-import SearchPageLayout from "@/components/layouts/search-page"
 import RefererPageTemplate from "@/modules/referral/referer/template"
+
+import { siteConfig } from "@/config/site"
+import CommonPageLayout from "@/components/layouts/common"
+
+export const metadata = siteConfig.page.referrer.metadata
 
 const RefererPage: NextPage = () => {
   return (
-    <SearchPageLayout title="推薦人">
+    <CommonPageLayout title={siteConfig.page.referrer.name}>
       <RefererPageTemplate />
-    </SearchPageLayout>
+    </CommonPageLayout>
   )
 }
 
