@@ -82,6 +82,7 @@ const RefererPostPageTemplate: React.FunctionComponent<
             currentMaxYearOfExperience={maxYearOfExperience}
             currentMinYearOfExperience={minYearOfExperience}
             type={EMessageType.POST}
+            handleReset={handleReset}
           />
           <Button onClick={handleSubmitChange} className="whitespace-nowrap">
             搜尋
