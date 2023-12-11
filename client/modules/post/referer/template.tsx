@@ -8,7 +8,6 @@ import useSearchPost from "@/hooks/api/post/search-post"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import BaseInfiniteScroll from "@/components/customized-ui/Infinite-scroll/base"
-import ResetButton from "@/components/customized-ui/buttons/reset"
 import ReferralPostCard from "@/components/customized-ui/cards/referral-post"
 import SearchPopover from "@/components/customized-ui/pop-overs/search"
 import CardSkeletonList from "@/components/customized-ui/skeletons/card-list"
@@ -84,7 +83,6 @@ const RefererPostPageTemplate: React.FunctionComponent<
             currentMinYearOfExperience={minYearOfExperience}
             type={EMessageType.POST}
           />
-          <ResetButton onClick={handleReset} />
           <Button onClick={handleSubmitChange} className="whitespace-nowrap">
             搜尋
           </Button>
