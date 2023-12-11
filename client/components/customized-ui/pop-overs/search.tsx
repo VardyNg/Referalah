@@ -143,6 +143,15 @@ const SearchPopover: React.FunctionComponent<ISearchPopoverProps> = ({
               />
             </div>
           </div>
+
+          <div>
+            <Button
+              onClick={handleReset}
+              style={{width: '100%'}}
+            >
+              重設
+            </Button>
+          </div>
         </div>
       </PopoverContent>
     </Popover>
