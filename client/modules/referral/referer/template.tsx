@@ -88,6 +88,7 @@ const RefererPageTemplate: React.FunctionComponent<
             currentMaxYearOfExperience={maxYearOfExperience}
             currentMinYearOfExperience={minYearOfExperience}
             type={EMessageType.REFERRAL}
+            handleReset={handleReset}
           />
           <Button onClick={handleSubmitChange} className="whitespace-nowrap">
             搜尋

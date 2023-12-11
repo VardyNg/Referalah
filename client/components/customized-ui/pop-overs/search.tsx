@@ -37,6 +37,7 @@ interface ISearchPopoverProps {
   currentMaxYearOfExperience?: string
   currentSorting: string
   type: EMessageType
+  handleReset: () => void
 }
 
 const SearchPopover: React.FunctionComponent<ISearchPopoverProps> = ({
@@ -57,6 +58,7 @@ const SearchPopover: React.FunctionComponent<ISearchPopoverProps> = ({
   currentMaxYearOfExperience,
   currentSorting,
   type,
+  handleReset
 }) => {
   const industryOptions = useIndustryOptions()
   const countryOptions = useCountryOptions()
